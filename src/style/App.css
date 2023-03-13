@@ -1,0 +1,92 @@
+/* Host name color in the lobby */
+.host {
+  color: rgb(224, 195, 31);
+}
+
+/* Extra large font */
+.bigFont {
+  font-size: 20px;
+}
+
+/* Container for flex-styled divs */
+.flexContainer {
+  display: flex;
+  flex: 1;
+  overflow-y: auto;
+  margin: 5px 5px 5px 5px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Extra margins on "main" content; used with flexContainer */
+.mainContent{
+  margin: 5% 15% 5% 15%
+}
+
+/* Reduced margins on phone */
+@media (max-width: 900px) {
+  .mainContent{
+    margin: 5%;
+  }
+}
+
+/* A bit of extra margins for smaller components */
+.extraMargin {
+  margin: 15px;
+}
+
+/* Buttons in the top bar */
+.topBarButton {
+  width: 200px;
+  height: 50px;
+  padding: 5px;
+  font-size: 24px;
+	position: relative;
+  margin: 2px 2px 20px 2px;
+  border: 1px solid black;
+  background-color: rgb(115, 216, 241);
+  z-index: 9999;
+}
+
+/* Reduce top bar button size on phone */
+@media (max-width: 900px) {
+  .topBarButton {
+    width: 105px;
+    height: 40px;
+    padding: 3px;
+    font-size: 16px;
+  }
+}
+
+/* User responsiveness */
+@media (hover: hover){
+  .topBarButton:hover {
+    background: white;
+  }
+
+  .generalButton:hover {
+    background-color: white;
+  }
+}
+
+.generalButton:active {
+  background-color:white;
+}
+
+.topBarButton:active {
+  background-color: white;
+}
+
+/* Main button style */
+.generalButton {
+  width: 240px;
+  height: 90px;
+	position: relative;
+	padding: 10px 10px;
+  margin: 4px;
+  font-size: 25px;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: rgb(225, 180, 226);
+}

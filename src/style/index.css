@@ -1,0 +1,18 @@
+/*
+https://www.1001freefonts.com/lato.font
+*/
+@font-face {
+  font-family: Lato;
+  src: url(Lato-Regular.ttf)
+}
+
+/* Master font */
+html {
+  font-family: Lato;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
